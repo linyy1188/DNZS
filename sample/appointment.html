@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>电脑诊所—网络开拓者协会</title>
+    <meta name="description" content="电脑诊所">
+    <meta name="author" content="linyy1188">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Styles --> 
+    <link type="text/css" href="css/custom-theme/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+    <link type="text/css" href="css/def-main.css" rel="stylesheet"/>
+    <link type="text/css" href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/demo.css" rel="stylesheet">
+	
+  </head>
+
+  <body>
+
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery.ui.1.9.2.ie.css"/>
+  <![endif]-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="brand" style="color:#FFF" >BITNP </div>
+          <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">咨询</a></li>
+                <li><a href="#">预约</a></li>
+                <li><a href="#">留言</a></li>
+              </ul>
+              <ul class="nav pull-right">
+              	<li><a href="#">了解我们</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" >
+
+      <div class="content" >
+      
+      
+      
+      
+      
+      <div class="row">
+    <div class="span8">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend style="margin-left:50px;">诊所预约</legend>
+          <div class="control-group">
+            <label class="control-label" for="input01" >姓名</label>
+            <div class="controls">
+            
+              <input type="text" class="input-xlarge tip" id="name" placeholder="请输入姓名." title="请不要输入非主流昵称"/>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="date">选择时间</label>
+            	<div class="controls">
+           		 <div  title="请选择日期，只能预约本周的哦" id="dateset" >
+                    
+                  <input type="radio" id="date1" name="date" /><label for="date1">周一</label>
+                  <input type="radio" id="date2" name="date" /><label for="date2">周一</label>
+                  <input type="radio" id="date3" name="date" /><label for="date3">周一</label>
+                  <input type="radio" id="date4" name="date" /><label for="date4">周一</label>
+                  <input type="radio" id="date5" name="date" /><label for="date5">周一</label>
+                  <input type="radio" id="date6" name="date" /><label for="date6">周一</label>
+                  </div>
+                  <div id="num"class="alert alert-info" style="margin-top:10px;" >已有</div>
+                </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="multiSelect">复选框</label>
+            <div class="controls">
+              <select multiple="multiple" id="multiSelect">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="fileInput">上传框</label>
+            <div class="controls">
+              <input class="input-file" id="fileInput" type="file">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="textarea">文本域</label>
+            <div class="controls">
+              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">保存更改</button>
+            <button class="btn">取消</button>
+          </div>
+        </fieldset>
+      </form>
+      <h3>标记的例子</h3>
+      <p>
+	根据上面的例子，这里将展示如何标记一个控件组。
+	需要用到 <code>.control-group</code>, <code>.control-label</code>, 和 <code>.controls</code> 类。
+      </p>
+
+    </div>
+    
+  </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+      <div id="footer">
+            <div class="footer-line1">
+                <a href="#">加入网协</a>
+                |
+                <a href="#">BlackHole导航</a>
+                |
+                <a href="#">京工社区</a>
+                |
+                <a href="#">联系我们</a>
+            </div>
+            <div class="footer-line2">2012 bitNP Tech.</div>
+       </div>
+        <!--scripts-->
+
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+        <!--daterangepicker-->
+        <script type="text/javascript" src="third-party/jQuery-UI-Date-Range-Picker/js/date.js"></script>
+        <script type="text/javascript" src="third-party/jQuery-UI-Date-Range-Picker/js/daterangepicker.jQuery.js"></script>
+
+        <!--wijmo-->
+        <script src="third-party/wijmo/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="third-party/wijmo/jquery.bgiframe-2.1.3-pre.js" type="text/javascript"></script>
+        <script src="third-party/wijmo/jquery.wijmo-open.1.5.0.min.js" type="text/javascript"></script>
+
+
+        <!-- FileInput -->
+        <script src="third-party/jQuery-UI-FileInput/js/enhance.min.js" type="text/javascript"></script>
+        <script src="third-party/jQuery-UI-FileInput/js/fileinput.jquery.js" type="text/javascript"></script>
+
+        <!--init for this page-->
+        <script type="text/javascript" src="bootstrap/js/bootstrap-carousel.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap-tooltip.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/appointment.js"></script>
+		
+
+  </body>
+</html>
