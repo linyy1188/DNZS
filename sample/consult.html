@@ -32,8 +32,8 @@
           <div class="nav-collapse collapse">
               <ul class="nav">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="consult.html">咨询</a></li>
-                <li class="active"><a href="#">预约</a></li>
+                <li class="active"><a href="#">咨询</a></li>
+                <li ><a href="appointment.html">预约</a></li>
                 <li><a href="message.html">留言</a></li>
               </ul>
               <ul class="nav pull-right">
@@ -47,7 +47,7 @@
 
     <div class="container" >
 
-      <div class="content" >
+      <div class="content"  >
       
       
       
@@ -57,42 +57,28 @@
     <div class="span8">
       <form class="form-horizontal" style="margin-left:50px;">
         <fieldset>
-          <legend >诊所预约</legend>
+          <legend >诊所咨询</legend>
           <div class="control-group">
             <label class="control-label" for="input01" >姓名</label>
             <div class="controls">
-              <input type="text" class="input-xlarge tip" id="app-name" placeholder="请输入姓名." title="请不要输入昵称"/>
+              <input type="text" class="input-xlarge tip" id="con-name" placeholder="请输入姓名." title="请不要输入昵称"/>
             </div>
           </div>
            <div class="control-group">
             <label class="control-label" for="input01" >联系方式</label>
             <div class="controls">
-              <input type="text" class="input-xlarge tip" id="app-phone" placeholder="请输入手机号码."title="移动联通电信皆可"/>
+              <input type="text" class="input-xlarge tip" id="con-phone" placeholder="请输入手机号码."title="移动联通电信皆可"/>
             </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="date">选择时间</label>
-            	<div class="controls">
-           		 <div  title="请选择本周日期" id="dateset" >
-                  <input type="radio" id="date1" name="date" /><label for="date1">周一</label>
-                  <input type="radio" id="date2" name="date" /><label for="date2">周二</label>
-                  <input type="radio" id="date3" name="date" /><label for="date3">周三</label>
-                  <input type="radio" id="date4" name="date" /><label for="date4">周四</label>
-                  <input type="radio" id="date5" name="date" /><label for="date5">周五</label>
-                  <input type="radio" id="date6" name="date" /><label for="date6">周六</label>
-                  </div>
-                  <div id="num"class="alert alert-info" style="margin-top:10px; margin-bottom:-10px; visibility:hidden" >已有</div>
-                </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="textarea">问题简述</label>
             <div class="controls">
-              <textarea class="input-xlarge tip" title="请不要多于100字"	 id="app-discri" type="textarea" style="height:91px;width:300px" >简述或不填</textarea>
+              <textarea class="input-xlarge tip" type="textarea" id="con-discri" style="height:90px;width:300px" title="请不要多于100字" ></textarea>
             </div>
           </div>
-          <div class="form-actions">
+          <div class="form-actions" style="margin-bottom:103px">
             <button type="submit" class="btn btn-primary">提交</button>
-            <button type="reset" class="btn">重置</button>
+            <button class="btn" type="reset">重置</button>
           </div>
         </fieldset>
       </form>
@@ -142,7 +128,6 @@
         <script type="text/javascript" src="bootstrap/js/bootstrap-carousel.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap-tooltip.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/appointment.js"></script>
 		
 
   </body>
