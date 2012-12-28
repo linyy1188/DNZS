@@ -22,9 +22,8 @@ var getsta = function(i){
   	xmlhttp.send();
   	xmlhttp.onreadystatechange=function(){
   		if (xmlhttp.readyState==4 && xmlhttp.status==200)
-  			ret =  xmlhttp.responseText;
+  			document.getElementById('num').innerHTML = "已有"+xmlhttp.responseText+"人";
   	}
-  	return ret;
 }
 
 
@@ -38,7 +37,7 @@ $(':radio').click(function(){
 	  { 
 	   s="date"+i;
 	 if ($(this).attr('id')==s )
-		 $('#num').html("已有"+getsta(i)+"人预约")
+		 getsta(i);
 		 }
 
 	$('#num').css("visibility","visible");
