@@ -1,5 +1,8 @@
 <?php
 function appointment(){
+	session_start();
+	if ($_SESSION['6_letters_code']!=$_GET['code'])
+		die('Wrong code');
 	$name = $_GET['name'];
 	$contact = $_GET['contact'];
 	$time = intval($_GET['date']);
@@ -52,6 +55,7 @@ function message(){
 $conn = mysql_connect('localhost', 'dnzsuser', '123456') or die('Cannot connect to database');
 mysql_select_db('DNZS', $conn);
 $page = $_GET['page'];
+session_start();
 switch ($page) {
 	case 'appointment':
 		appointment();
