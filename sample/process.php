@@ -117,6 +117,9 @@ switch ($page) {
 	case 'message':
 		message();
 		break;
+	default:
+		header("Location: index.html");
+		die();
 }
 mysql_close();
 header("Location: $page");
