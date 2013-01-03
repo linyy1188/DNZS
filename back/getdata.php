@@ -21,7 +21,8 @@ $result = mysql_query($query);
 while ($row = mysql_fetch_assoc($result)) {
 	$response[] = $row;
 }
+mysql_close();
 
 header('Content-type: application/json');
-echo json_encode($response);
+echo htmlentities(json_encode($response), ENT_NOQUOTES);
 ?>
