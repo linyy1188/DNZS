@@ -15,6 +15,8 @@ $(function () {
         return false;
     });
 
+    $("[href='#tabs-1']").click();
+
 });
 
 $("[href='#tabs-1']").click(function () {
