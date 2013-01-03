@@ -54,7 +54,7 @@ $("[href='#tabs-3']").click(function () {
       for (var i = data.length - 1; i >= 0; i--) {
         newdata += '<tr><td>'+data[i].contact+'</td><td>'+data[i].des+'</td><tr>';
       };
-      $('#tabs-3 table tbody').append(newdata);
+      $('#tabs-3 table tbody').html(newdata);
     }})
 }
 )
